@@ -17,14 +17,14 @@
 
             box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.5);
         }
-        div.smallermenu{
+        .smallermenu{
             border: 1px double black;
             background: rgb(185, 185, 185);
             width: 65vw;
-            height: 60vh;
+            height: 62vh;
 
             position: absolute;
-            top: 55px;
+            top: 40px;
             bottom: 0;
             left: 0;
             right: 0;
@@ -32,23 +32,47 @@
             
             overflow: auto;
         }
-        h1.mainheader{
+        .mainheader{
             text-align: center;
         }
-        img.avatar{
+        .avatar{
+            position: absolute;
+            
             border: 1px double black;
             background:white;
         }
-        div.post{
+        .post{
+            height: 85px;
+            position: relative;
             margin: 3px;
             padding: 3px;
-            background-color: rgb(162, 162, 170);
+            border-bottom: 1px solid black;
         }
-        div.views{
+        .views{
+            position: absolute;
             font-size: 0.7em;
             color:rgb(63, 62, 75);
-            text-align: right;
-            
+            bottom: 4px;
+            left: 4px;
+        }
+        .date{
+            position: absolute;
+            font-size: 0.7em;
+            color:rgb(63, 62, 75);
+            bottom: 4px;
+            right: 4px;
+            /*position: absolute;
+            font-size: 0.7em;
+            color:rgb(63, 62, 75);
+            top: 4px;
+            right: 4px;*/
+        }
+        .posttext{
+            width: 450px;
+            word-wrap: break-word;
+            position: absolute;
+            top: 15px;
+            left: 80px;
         }
     </style>
 
@@ -58,9 +82,66 @@
             Posts:
         </h1>
         <div class="smallermenu">
-            <div class="post">
-                <img class="avatar" src="avatar.png">
+            <div class="post" style="background-color: rgb(165, 164, 180)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">IT WORKS!</div>
                 <div class="views">12 views</div>
+                <div class="date">January 1, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(181, 181, 197)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">lalalala lalalalalalalalalalalala lalalalalalalala lalalalalalalalalalalalalalalala lalalalalalalala lalalala</div>
+                <div class="views">4 views</div>
+                <div class="date">January 2, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(168, 168, 187)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">SUP YALL</div>
+                <div class="views">21 views</div>
+                <div class="date">January 3, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(172, 172, 185)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">this website looks straight from the 90s, amirite?</div>
+                <div class="views">7 views</div>
+                <div class="date">January 4, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(165, 165, 184)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! </div>
+                <div class="posttext"></div>
+                <div class="views">2 views</div>
+                <div class="date">January 5, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(175, 175, 187)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">SEND CAT PICS 4 FOLLOW</div>
+                <div class="views">19 views</div>
+                <div class="date">January 6, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(170, 170, 187)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">i am an html noob</div>
+                <div class="views">23 views</div>
+                <div class="date">January 7, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(171, 171, 189)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">im running out of fake posts to make up!</div>
+                <div class="views">11 views</div>
+                <div class="date">January 8, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(187, 187, 199)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">HELLO WORLD!</div>
+                <div class="views">43 views</div>
+                <div class="date">January 9, 2025</div>
+            </div>
+            <div class="post" style="background-color: rgb(172, 172, 192)">
+                <img class="avatar" src="html/avatar.png">
+                <div class="posttext">last post, seeya!</div>
+                <div class="views">8 views</div>
+                <div class="date">January 10, 2025</div>
             </div>
         </div>
     </div>

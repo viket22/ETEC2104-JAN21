@@ -5,16 +5,13 @@
             background: rgb(185, 185, 185);
             width: 75vw;
             height: 75vh;
-
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
-            
             overflow: auto;
-
             box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.5);
         }
         .smallermenu{
@@ -22,14 +19,12 @@
             background: rgb(185, 185, 185);
             width: 65vw;
             height: 62vh;
-
             position: absolute;
             top: 40px;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
-            
             overflow: auto;
         }
         .mainheader{
@@ -76,69 +71,16 @@
         <h1 class="mainheader">
             Posts:
         </h1>
-        <div class="smallermenu">
-            <div class="post" style="background-color: rgb(165, 164, 180)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">IT WORKS!</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
+            <div class="smallermenu">
+                % for post in posts:
+                    <div class="post" style="background-color: rgb(165, 164, 180)">
+                        <img class="avatar" src="../html/avatar.png">
+                        <div class="posttext">${post['content']}</div>
+                        <div class="views">Views: ${post['view_count']}</div>
+                        <div class="date">${post['date']}</div>
+                    </div>
+                % endfor
             </div>
-            <div class="post" style="background-color: rgb(181, 181, 197)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">lalalala lalalalalalalalalalalala lalalalalalalala lalalalalalalalalalalalalalalala lalalalalalalala lalalala</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-            <div class="post" style="background-color: rgb(168, 168, 187)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">SUP YALL</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-            <div class="post" style="background-color: rgb(172, 172, 185)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">this website looks straight from the 90s, amirite?</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-            <div class="post" style="background-color: rgb(165, 165, 184)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! I LOVE WORD WRAP! </div>
-                <div class="posttext"></div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-            <div class="post" style="background-color: rgb(175, 175, 187)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">SEND CAT PICS 4 FOLLOW</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-            <div class="post" style="background-color: rgb(170, 170, 187)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">i am an html noob</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-            <div class="post" style="background-color: rgb(171, 171, 189)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">im running out of fake posts to make up!</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-            <div class="post" style="background-color: rgb(187, 187, 199)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">HELLO WORLD!</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-            <div class="post" style="background-color: rgb(172, 172, 192)">
-                <img class="avatar" src="../html/avatar.png">
-                <div class="posttext">last post, seeya!</div>
-                <div class="views">${randomviews} views</div>
-                <div class="date">${randomdate}</div>
-            </div>
-        </div>
     </div>
 </body>
 </html>

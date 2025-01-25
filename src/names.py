@@ -1,3 +1,3 @@
 namelist = [
-    "test1","test2","test3"
+    "Bob","Sally","Ron", "James", "Susan"
 ]

@@ -13,6 +13,8 @@ def generate_data():
 
 def get():
 
+    # discovered what a python dictionary was from stack overflow, figured it seemed best fit for giving
+    # each post their specific random view and date data without them all being the exact same
     post_list = [
         {'content': 'IT WORKS!'},
         {'content': 'lalalala lalalalalalalalalalalala lalalalalalalala lalalalalalalalalalalalalalalala lalalalalalalala lalalala'},

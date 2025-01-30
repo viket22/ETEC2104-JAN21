@@ -24,7 +24,7 @@ function check_email(){
         }
     }
 
-    if (count_at > 1 || email_input[email_input.length-1] === "@" || count_period < 1){
+    if (count_at > 1 || email_input[email_input.length-1] === "@" || email_input[0] === "@" || count_period < 1){
         alert("Invalid email!");
     }
 }

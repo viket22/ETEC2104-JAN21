@@ -1,10 +1,11 @@
 <html>
+    <script src="/html/signup.js"></script>
     <style>
         div.menu{
             border: 1px double black;
             background: rgb(185, 185, 185);
-            width: 50vw;
-            height: 45vh;
+            width: 20em;
+            height: 25em;
 
             position: absolute;
             top: 0;
@@ -30,11 +31,11 @@
             Sign Up
         </h1>
         <div class="signuptext">
-            Email: <br><input type="text" placeholder="Enter Email"> <br><br>
-            Name: <br><input type="text" placeholder="Enter First Name"> <br><br>
-            Password: <br><input type="password" placeholder="Enter Password"> <br><br>
-            Birthday: <br><input type="date"> <br> <br>
-            <button type="submit">Sign Up</button>
+            Email: <br><input type="text" placeholder="Enter Email" id="email"> <br><br>
+            Name: <br><input type="text" placeholder="Enter First Name" id="name"> <br><br>
+            Password: <br><input type="password" placeholder="Enter Password" id="password"> <br><br>
+            Birthday: <br><input type="date" id="bday"> <br> <br>
+            <button onclick="check_email(); check_nameandpass(); check_age();">Sign Up</button>
         </div>
     </div>
 </body>
